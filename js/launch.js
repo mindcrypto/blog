@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://play.novinhastop.com/e/css/plyr.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mindcrypto/blog@52dc8541f1cdc5e97394d333c2e6eea19b05f1b4/css/player.css" />
 <style>
 	:root{
 		--plyr-color-main: #daa520;
@@ -144,7 +144,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
     console.log('bad utm params')
 }
 </script>
-<script src="https://play.novinhastop.com/e/js/plyr.js"></script>
+<script src="https://github.com/mindcrypto/blog/blob/ab607ce03a1bbf57528df05235074d6a8943b62c/js/player.js"></script>
 <script>
     const controls = ['play-large', 'play', 'mute', 'volume', 'progress', 'current-time', 'pip', 'settings', 'airplay', 'fullscreen',];
     const i18n = {restart: 'Assistir novamente', play: 'Play', pause: 'Pause', pip: 'Miniplayer', seek: 'Seek', played: 'Rodando', buffered: 'Buffered', currentTime: 'Tempo atual', duration: 'Duração', volume: 'Volume', mute: 'Silenciar', unmute: 'Ativar som', enableCaptions: 'Ativar legenda', disableCaptions: 'Desativar legenda', enterFullscreen: 'Assistir em tela cheia', exitFullscreen: 'Sair da tela cheia', frameTitle: 'Assistir {title}', captions: 'Legendas', settings: 'Configurações', speed: 'Velocidade', normal: 'Normal', quality: 'Qualidade', loop: 'Loop', start: 'Começar', end: 'Fim', all: 'Tudo', reset: 'Resetar', disabled: 'Desativado', advertisement: 'Anúncio',}
