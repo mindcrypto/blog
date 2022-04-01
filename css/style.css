@@ -1,0 +1,17 @@
+:root{
+		--plyr-color-main: #daa520;
+		--plyr-video-background:#3A3B3C;
+		--plyr-control-radius:4px;
+		--plyr-tooltip-arrow-size:5px;
+		--plyr-video-control-background-hover:none;
+		--plyr-control-padding:50 !important;
+	}
+	.plyr__menu__container button:hover{background:rgba(0,0,0,.08) !important; color:rgba(0,0,0,0.9) !important}
+	.plyr__control--overlaid{color:#fff !important; text-shadow:2px 3px 8px rgba(0,0,0,0.5); width:40px !important; padding:0; height:40px !important; background:none !important;}
+	.plyr__control--overlaid:hover{color:var(--plyr-color-main) !important}
+	.plyr__control--overlaid svg{width:40px !important; height:40px;}
+	.plyr__progress__container{position:absolute; width:calc(100% - 20px); left:5px; bottom:46px;}
+	@media screen and (max-width:560px){
+		.plyr__control--overlaid{width:40px !important; height:40px !important;}
+		.plyr__control--overlaid svg{width:40px !important; height:40px;}
+	}
