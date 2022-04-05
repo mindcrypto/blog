@@ -25,11 +25,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         vidSource.setAttribute('type', 'video/mp4');
 
         vid.appendChild(vidSource)
-        
-        // pegar a div com o iframe do anuncio e colocar no player
-        const divAnuncio = document.querySelector('.nt_iframe_4ds');
-        divAnuncio.setAttribute('style', 'whidth:100%; height:100%;')
-
+	    
         const divAnuncioAdEx = document.querySelector('.nt_iframe_AdEx'); //320
         const divAnuncioAdEx2 = document.querySelector('.nt_iframe_AdEx2'); // 460
         const divAnuncioAdEx3 = document.querySelector('.nt_iframe_AdEx3'); // 760
@@ -106,7 +102,10 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
             divContent.appendChild(ads2);
             ads2.appendChild(divAnuncioAdEx3);
 
-	}else{
+	}else{	
+           // pegar a div com o iframe do anuncio e colocar no player
+            const divAnuncio = document.querySelector('.nt_iframe_4ds');
+	    divAnuncio.setAttribute('style', 'whidth:100%; height:100%;')
 	    divContent.append(ads);
         }        
 	    divContent.appendChild(divIframe);
