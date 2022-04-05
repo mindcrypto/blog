@@ -34,7 +34,6 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         const ads = document.createElement('div');
         ads.setAttribute('class', 'nt_4ds')
         ads.setAttribute('style', 'width:100%; margin-bottom:15px; text-align:center; height:90px; background:#121519;')
-        ads.appendChild(divAnuncio)
         // dois
         const ads2 = document.createElement('div');
         ads2.setAttribute('class', 'nt_4ds2');
@@ -106,6 +105,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
            // pegar a div com o iframe do anuncio e colocar no player
             const divAnuncio = document.querySelector('.nt_iframe_4ds');
 	    divAnuncio.setAttribute('style', 'whidth:100%; height:100%;')
+	ads.appendChild(divAnuncio)
 	    divContent.append(ads);
         }        
 	    divContent.appendChild(divIframe);
