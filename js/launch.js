@@ -94,21 +94,23 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         divPlayer.setAttribute('style', 'position:fixed; z-index:99999999; overflow-y:scroll;  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; top: 0; left: 0; width:100%; height:100%; background:rgba(0,0,0,0.75); backdrop-filter:blur(10px);')
         divPlayer.appendChild(divContent);
         divContent.appendChild(logo);
-        divContent.append(ads);
-        divContent.appendChild(divIframe);
-        divIframe.appendChild(vid);
         // adicionar anuncio conforme o tamanho da tela
-        if (window.matchMedia("(max-width: 710px)").matches) {
-            // a viewport tem pelo menos 710 pixels de largura
+        if (window.matchMedia("(max-width: 459px)").matches) {
+            // a viewport tem pelo menos 459 pixels de largura
             // console.log('ads 320 ')
             divContent.appendChild(ads2);
             ads2.appendChild(divAnuncioAdEx);
-        }else{
-            // a viewport tem pelo menos 400 pixels de largura
+        }else if (window.matchMedia("(max-width: 710px)").matches){
+	    // a viewport tem pelo menos 400 pixels de largura
             // console.log('ads 720 ')
             divContent.appendChild(ads2);
             ads2.appendChild(divAnuncioAdEx3);
-        }
+
+	}else{
+	    divContent.append(ads);
+        }        
+	    divContent.appendChild(divIframe);
+	    divIframe.appendChild(vid);
         divContent.appendChild(divFooter);
         divElemment.appendChild(divPlayer);
 
