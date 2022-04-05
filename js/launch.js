@@ -16,7 +16,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         const vid = document.createElement('video');
         vid.setAttribute('id', 'player')
         vid.setAttribute('controls', '')
-        vid.setAttribute('style', 'aspect-ratio: 16 / 9')
+        vid.setAttribute('style', 'aspect-ratio: 16 / 9; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.5)')
 		vid.setAttribute('autoplay', '');
 		vid.setAttribute('playsinline', '');
 
@@ -37,7 +37,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         // 4ds
         const ads = document.createElement('div');
         ads.setAttribute('class', 'nt_4ds')
-        ads.setAttribute('style', 'width:100%; margin-bottom:15px; height:90px; background:#121519;')
+        ads.setAttribute('style', 'width:100%; margin-bottom:15px; text-align:center; height:90px; background:#121519;')
         ads.appendChild(divAnuncio)
         // dois
         const ads2 = document.createElement('div');
@@ -91,7 +91,7 @@ if(getParameterByName('utm') == 'fb' || getParameterByName('utm') == 'twitter'){
         // div player
         const divPlayer = document.createElement('div');
         divPlayer.setAttribute('class', 'divYoutubePlayer');
-        divPlayer.setAttribute('style', 'position:fixed; z-index:99999999; overflow-y:scroll;  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; top: 0; left: 0; width:100%; height:100%; background:rgba(0,0,0,0.75); backdrop-filter:blur(15px);')
+        divPlayer.setAttribute('style', 'position:fixed; z-index:99999999; overflow-y:scroll;  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; top: 0; left: 0; width:100%; height:100%; background:rgba(0,0,0,0.75); backdrop-filter:blur(10px);')
         divPlayer.appendChild(divContent);
         divContent.appendChild(logo);
         divContent.append(ads);
